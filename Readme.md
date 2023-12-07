@@ -46,9 +46,10 @@ The page displays the list of games and the game filter. If a filter is configur
 
 ## 启动方式
   ``` shell
-  cd back-end && npm start
-  cd front-end && npm run dev
+  cd back-end && npm i && npm start
+  cd front-end && npm i  && npm run dev
   ```
 
 ## 内置账号密码
     账号 player1  密码 player1
+    账号 player2  密码 player2
