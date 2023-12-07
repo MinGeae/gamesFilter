@@ -1,0 +1,76 @@
+.dashboard {
+  width: 100vw;
+  height: 100vh;
+}
+
+.nav {
+  width: 100vw;
+  height: 40px;
+  box-shadow: 0 2px 2px -2px grey;
+}
+
+.right-content {
+  float: right;
+  margin-right: 20px;
+}
+
+.right-content span {
+  margin-right: 20px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px;
+}
+
+.game-content {
+  display: grid;
+  /*  声明列的宽度  */
+  grid-template-columns: repeat(4, 200px);
+  /*  声明行间距和列间距  */
+  grid-gap: 20px;
+}
+
+.game-content .content-div {
+  width: 200px;
+  height: 100px;
+  background-size: cover;
+  border-radius: 8px;
+}
+
+.filter-card {
+  max-height: 600px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.filter-card .label-name {
+  color: #808080;
+  padding-bottom: 8px;
+  padding-right: 8px;
+}
+
+@media screen and (max-width: 428px) {
+  .content{
+    display: flex;
+    margin: 12px;
+    flex-direction: column-reverse;
+  }
+
+  .filter-card {
+    margin-bottom: 20px;
+  }
+
+  .game-content {
+    width: 100%;
+    grid-template-columns: repeat(2, 200px);
+    /*  声明行间距和列间距  */
+    grid-gap: 4px;
+  }
+}
